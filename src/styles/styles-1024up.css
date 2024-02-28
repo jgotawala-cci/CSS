@@ -1,0 +1,7 @@
+@media (min-width: 1024px) {
+  :root {
+    --spacing: 96px;
+    --container-width: 833px;
+    --contact-conatiner-height: 644px;
+  }
+}
