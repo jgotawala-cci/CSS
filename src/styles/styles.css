@@ -478,9 +478,12 @@ figcaption > h2 {
 .dropdown-content ul li {
   height: 40px;
   line-height: 2.7;
-  vertical-align: middle;
   border-bottom: 1px solid var(--orange);
   padding-left: 16px;
+}
+
+.dropdown-content ul li a {
+  display: block;
 }
 
 .dropdown-content ul li a:hover,
