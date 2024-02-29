@@ -61,7 +61,6 @@ body {
 /* Elements */
 header {
   background-color: var(--navy-blue);
-  padding: 0 var(--spacing);
 }
 
 button {

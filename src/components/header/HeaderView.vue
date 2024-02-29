@@ -1,6 +1,6 @@
 <template>
   <header>
-    <header-main />
+    <header-main class="container" />
   </header>
 </template>
 
