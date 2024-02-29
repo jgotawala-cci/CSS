@@ -15,10 +15,10 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
-const isMobile = ref(window.innerWidth < 768); // Adjust the threshold as needed
+const isMobile = ref(window.innerWidth <= 768); // Adjust the threshold as needed
 
 const handleResize = () => {
-  isMobile.value = window.innerWidth < 768; // Adjust the threshold as needed
+  isMobile.value = window.innerWidth <= 768; // Adjust the threshold as needed
 };
 
 onMounted(() => {

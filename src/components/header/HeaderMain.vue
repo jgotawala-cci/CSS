@@ -23,11 +23,11 @@ import HeaderOverlay from "./HeaderOverlay.vue";
 
 import { onBeforeUnmount, onMounted, ref } from "vue";
 
-const isMobile = ref(window.innerWidth < 768); // Adjust the threshold as needed
+const isMobile = ref(window.innerWidth <= 768); // Adjust the threshold as needed
 const overlayStyle = ref({ right: "-90%" });
 
 const handleResize = () => {
-  isMobile.value = window.innerWidth < 768; // Adjust the threshold as needed
+  isMobile.value = window.innerWidth <= 768; // Adjust the threshold as needed
 };
 
 const onShowOverlay = () => {
