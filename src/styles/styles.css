@@ -187,13 +187,13 @@ main > div > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
+  /* height: 48px; */
   color: var(--transparent-dark-brown);
   background-color: var(--white);
   border: 1px solid var(--pale-apricot);
   border-radius: 6px;
   margin-top: 28px;
-  padding: 0 16px;
+  padding: 4.5px 16px;
   position: relative;
 }
 
