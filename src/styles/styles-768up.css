@@ -1,8 +1,7 @@
 @media (min-width: 769px) {
   :root {
     --spacing: 72px;
-    --container-width: 624px;
-    --contact-conatiner-height: 744px;
+    --container-width: 675px;
   }
 
   /* common */
@@ -44,7 +43,7 @@
     display: flex;
     justify-content: center;
     flex-basis: 66%;
-    gap: 12%;
+    gap: 5%;
   }
 
   .header-main nav a {
@@ -61,6 +60,10 @@
 
   .banner-wrapper p {
     margin-top: 24px;
+  }
+
+  .banner-wrapper p > span {
+    display: inline;
   }
 
   /* Main tabs */
@@ -103,9 +106,9 @@
 
   /* Contact */
   .contact-container {
-    height: var(--contact-conatiner-height);
     flex-direction: row;
     align-items: center;
+    padding: 41.25px 0 71px;
   }
 
   .contact-container > img {
@@ -174,5 +177,13 @@
   .footer-bottom-wrapper > span {
     margin-top: 0;
     text-align: start;
+  }
+
+  .footer-bottom-wrapper > span > span {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
   }
 }

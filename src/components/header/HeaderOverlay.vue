@@ -1,6 +1,10 @@
 <template>
   <aside class="overlay" :style="props.overlayStyle">
-    <a href="javascript:void(0)" class="closebtn" @click="props.onCloseOverlay">
+    <a
+      href="javascript:void(0)"
+      class="close-btn"
+      @click="props.onCloseOverlay"
+    >
       <img src="../../styles/images/x-mark.svg" />
     </a>
     <nav>

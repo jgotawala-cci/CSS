@@ -2,6 +2,9 @@
   :root {
     --spacing: 96px;
     --container-width: 833px;
-    --contact-conatiner-height: 644px;
+  }
+
+  .header-main nav {
+    gap: 12%;
   }
 }

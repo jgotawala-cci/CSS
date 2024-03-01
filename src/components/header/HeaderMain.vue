@@ -21,7 +21,7 @@
 <script setup lang="ts">
 import HeaderOverlay from "./HeaderOverlay.vue";
 
-import { onBeforeUnmount, onMounted, ref } from "vue";
+import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 
 const isMobile = ref(window.innerWidth <= 768); // Adjust the threshold as needed
 const overlayStyle = ref({ right: "-90%" });
@@ -46,5 +46,11 @@ onMounted(() => {
 
 onBeforeUnmount(() => {
   window.removeEventListener("resize", handleResize);
+});
+
+watch(isMobile, () => {
+  if (overlayStyle.value.right === "0%") {
+    overlayStyle.value = { right: "-90%" };
+  }
 });
 </script>

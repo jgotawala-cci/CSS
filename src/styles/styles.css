@@ -172,6 +172,9 @@ h4 {
 .banner-wrapper p {
   margin-top: 12px;
 }
+.banner-wrapper p > span {
+  display: none;
+}
 
 /* Main tabs */
 main > div > nav {
@@ -257,13 +260,13 @@ figcaption > h2 {
 }
 
 /* Pagination */
-.pagecount-wrapper {
+.page-count-wrapper {
   display: block;
   text-align: center;
   margin-top: 48px;
 }
 
-.pagecount-wrapper > button {
+.page-count-wrapper > button {
   display: inline-block;
   background-color: var(--white);
   box-shadow: 0 3px 9px 0 rgba(57, 20, 0, 0.08);
@@ -272,12 +275,12 @@ figcaption > h2 {
   min-width: 48px;
 }
 
-.pagecount-wrapper > button.no-margin {
+.page-count-wrapper > button.no-margin {
   margin-right: 0;
 }
 
-.pagecount-wrapper > button:hover,
-.pagecount-wrapper .active {
+.page-count-wrapper > button:hover,
+.page-count-wrapper .active {
   background-color: var(--red-orange);
   color: var(--white);
   box-shadow: 0;
@@ -408,6 +411,7 @@ figcaption > h2 {
 }
 
 .overlay {
+  display: block;
   height: 100%;
   width: 90%;
   position: fixed;
@@ -441,7 +445,7 @@ figcaption > h2 {
   opacity: 0.75;
 }
 
-.overlay .closebtn {
+.overlay .close-btn {
   position: absolute;
   width: 30px;
   height: 30px;
