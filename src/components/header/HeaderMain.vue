@@ -33,11 +33,13 @@ const handleResize = () => {
 const onShowOverlay = () => {
   if (isMobile.value) {
     overlayStyle.value = { right: "0%" };
+    document.body.classList.add("no-scroll");
   }
 };
 
 const onCloseOverlay = () => {
   overlayStyle.value = { right: "-90%" };
+  document.body.classList.remove("no-scroll");
 };
 
 onMounted(() => {
@@ -51,6 +53,7 @@ onBeforeUnmount(() => {
 watch(isMobile, () => {
   if (overlayStyle.value.right === "0%") {
     overlayStyle.value = { right: "-90%" };
+    document.body.classList.remove("no-scroll");
   }
 });
 </script>

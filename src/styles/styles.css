@@ -58,6 +58,10 @@ body {
   margin: 0 var(--spacing);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /* Elements */
 header {
   background-color: var(--navy-blue);
