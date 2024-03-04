@@ -423,7 +423,7 @@ figcaption > h2 {
   top: 0;
   right: -90%;
   background-color: var(--light-peach);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: var(--transition-delay);
 }
 
