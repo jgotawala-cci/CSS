@@ -1,5 +1,6 @@
 :root {
   --white: #fff;
+  --transparent-black: rgba(0, 0, 0, 0.5);
   --transparent-white: rgba(255, 255, 255, 0.5);
   --hover-white-bg: rgba(255, 255, 255, 0.2);
   --hover-white-text: rgba(255, 255, 255, 0.5);
@@ -414,12 +415,27 @@ figcaption > h2 {
   margin-top: 32px;
 }
 
+.overlay-wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  background-color: var(--transparent-black);
+  transition: var(--transition-delay);
+}
+
+.overlay-wrapper.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 .overlay {
-  display: block;
   height: 100%;
   width: 90%;
   position: fixed;
-  z-index: 1;
   top: 0;
   right: -90%;
   background-color: var(--light-peach);

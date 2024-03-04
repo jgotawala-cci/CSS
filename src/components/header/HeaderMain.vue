@@ -14,6 +14,7 @@
     <header-overlay
       :overlayStyle="overlayStyle"
       :onCloseOverlay="onCloseOverlay"
+      :visible="isVisible"
     />
   </section>
 </template>
@@ -25,6 +26,7 @@ import { onBeforeUnmount, onMounted, ref, watch } from "vue";
 
 const isMobile = ref(window.innerWidth <= 768); // Adjust the threshold as needed
 const overlayStyle = ref({ right: "-90%" });
+const isVisible = ref(false);
 
 const handleResize = () => {
   isMobile.value = window.innerWidth <= 768; // Adjust the threshold as needed
@@ -34,12 +36,14 @@ const onShowOverlay = () => {
   if (isMobile.value) {
     overlayStyle.value = { right: "0%" };
     document.body.classList.add("no-scroll");
+    isVisible.value = true;
   }
 };
 
 const onCloseOverlay = () => {
   overlayStyle.value = { right: "-90%" };
   document.body.classList.remove("no-scroll");
+  isVisible.value = false;
 };
 
 onMounted(() => {
@@ -52,8 +56,7 @@ onBeforeUnmount(() => {
 
 watch(isMobile, () => {
   if (overlayStyle.value.right === "0%") {
-    overlayStyle.value = { right: "-90%" };
-    document.body.classList.remove("no-scroll");
+    onCloseOverlay();
   }
 });
 </script>
