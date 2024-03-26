@@ -10,7 +10,7 @@
   <div class="dropdown" :class="{ active: showDropdown }">
     <section class="dropdown-view" @click="toggelDropdown">
       <label>{{ selected }}</label>
-      <img :src="dropDowndownImg" class="triangle" />
+      <img :src="dropDowndownImg" class="triangle" height="16" width="20" />
     </section>
     <div class="dropdown-content">
       <ul>

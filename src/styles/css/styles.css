@@ -341,3 +341,176 @@ button {
     display: inline;
   }
 }
+/* Tabs */
+/* line 4, ../sass/layout/_tabs.scss */
+main div nav {
+  display: none;
+}
+@media (min-width: 769px) {
+  /* line 4, ../sass/layout/_tabs.scss */
+  main div nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 76px;
+    gap: 46px;
+  }
+  /* line 12, ../sass/layout/_tabs.scss */
+  main div nav a:hover {
+    color: var(--dark-brown);
+  }
+  /* line 15, ../sass/layout/_tabs.scss */
+  main div nav a sup {
+    font-size: 14px;
+    line-height: 1.71;
+    position: relative;
+    /* Enable positioning */
+    top: -5px;
+    /* Adjust the vertical position as needed */
+  }
+}
+/* line 24, ../sass/layout/_tabs.scss */
+main div .dropdown {
+  position: relative;
+}
+/* line 26, ../sass/layout/_tabs.scss */
+main div .dropdown .dropdown-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(57, 20, 0, 0.5);
+  background-color: #fff;
+  border: 1px solid #f3d1bf;
+  border-radius: 6px;
+  margin-top: 28px;
+  padding: 4.5px 16px;
+  position: relative;
+}
+/* line 38, ../sass/layout/_tabs.scss */
+main div .dropdown .dropdown-view label {
+  padding-top: 5px;
+}
+/* line 42, ../sass/layout/_tabs.scss */
+main div .dropdown .dropdown-view:hover {
+  cursor: pointer;
+  border: 1px solid #f7cc47;
+  color: #391400;
+}
+@media (min-width: 769px) {
+  /* line 24, ../sass/layout/_tabs.scss */
+  main div .dropdown {
+    display: none;
+  }
+}
+/* line 52, ../sass/layout/_tabs.scss */
+main div .dropdown-content {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  top: 100%;
+  left: 0;
+  max-height: 0;
+  /* Initially hide the dropdown */
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+/* line 66, ../sass/layout/_tabs.scss */
+main div .dropdown-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 70, ../sass/layout/_tabs.scss */
+main div .dropdown-content ul li {
+  height: 40px;
+  line-height: 2.7;
+  border-bottom: 1px solid #f38472;
+  padding-left: 16px;
+}
+/* line 75, ../sass/layout/_tabs.scss */
+main div .dropdown-content ul li a {
+  display: block;
+}
+/* line 77, ../sass/layout/_tabs.scss */
+main div .dropdown-content ul li a:hover {
+  color: #391400;
+}
+/* line 84, ../sass/layout/_tabs.scss */
+main div .dropdown.active .dropdown-content {
+  max-height: 250px;
+  /* Show the dropdown by setting max-height to a value */
+}
+
+/* line 89, ../sass/layout/_tabs.scss */
+.selected {
+  color: #391400;
+}
+
+/* Grid */
+/* line 3, ../sass/layout/_grid.scss */
+.grid-container {
+  display: grid;
+  gap: 32px;
+  /* Adjust the gap between grid items as needed */
+  place-items: center;
+  grid-template-columns: 1fr;
+  line-height: 0;
+  margin-top: 48px;
+}
+/* line 11, ../sass/layout/_grid.scss */
+.grid-container figure {
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+/* line 15, ../sass/layout/_grid.scss */
+.grid-container figure:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+/* line 20, ../sass/layout/_grid.scss */
+.grid-container figure img {
+  width: 100%;
+  height: 416px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/* line 26, ../sass/layout/_grid.scss */
+.grid-container figure figcaption {
+  position: absolute;
+  bottom: 51px;
+  left: 28px;
+  line-height: 2;
+}
+/* line 31, ../sass/layout/_grid.scss */
+.grid-container figure figcaption span {
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px 15px 1px 16px;
+  border-radius: 19px;
+}
+/* line 37, ../sass/layout/_grid.scss */
+.grid-container figure figcaption h2 {
+  margin-top: 23px;
+}
+@media (min-width: 769px) {
+  /* line 3, ../sass/layout/_grid.scss */
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    /* Two columns of equal width */
+    grid-template-rows: 1fr auto;
+    /* One row with full width, and one row with two columns */
+    margin-top: 68px;
+  }
+  /* line 48, ../sass/layout/_grid.scss */
+  .grid-container figure:first-child {
+    grid-column: 1 / -1;
+    /* Span the full width of the grid */
+  }
+  /* line 52, ../sass/layout/_grid.scss */
+  .grid-container figure:first-child img {
+    height: 720px;
+  }
+}
