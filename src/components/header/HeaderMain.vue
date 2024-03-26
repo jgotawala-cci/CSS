@@ -1,6 +1,6 @@
 <template>
   <section class="header-main">
-    <img src="../../styles/images/logo.png" />
+    <img src="../../styles/images/logo.png" width="152" height="48" />
     <nav>
       <a href="#">About</a>
       <a href="#">Services</a>
@@ -9,7 +9,7 @@
     </nav>
     <div class="button-wrapper" @click="onShowOverlay">
       <button>Contact</button>
-      <img src="../../styles/images/bars.svg" />
+      <img src="../../styles/images/bars.svg" height="19" width="21" />
     </div>
     <header-overlay
       :overlayStyle="overlayStyle"

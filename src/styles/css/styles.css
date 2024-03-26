@@ -1,0 +1,343 @@
+/* Variables */
+/* Font */
+/* Colors */
+/* HELPERS */
+/*$bold*/
+/*$extra-bold*/
+/*$black*/
+/* Fonts */
+@font-face {
+  font-family: "Epilogue-Black";
+  src: url("../fonts/Epilogue-Black.ttf");
+}
+@font-face {
+  font-family: "Epilogue-Bold";
+  src: url("../fonts/Epilogue-Bold.ttf");
+}
+@font-face {
+  font-family: "Epilogue-ExtraBold";
+  src: url("../fonts/Epilogue-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "Epilogue-Regular";
+  src: url("../fonts/Epilogue-Regular.ttf");
+}
+/* Mixins */
+/* Typography */
+/* line 2, ../sass/base/_typography.scss */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+/* line 9, ../sass/base/_typography.scss */
+h1,
+h2 {
+  color: #fff;
+  font-family: "Epilogue-ExtraBold";
+  font-weight: 800;
+}
+
+/* line 16, ../sass/base/_typography.scss */
+h1 {
+  font-size: 56px;
+  letter-spacing: -2px;
+  line-height: 1.42;
+}
+@media (min-width: 769px) {
+  /* line 16, ../sass/base/_typography.scss */
+  h1 {
+    font-size: 72px;
+    line-height: 1.11;
+  }
+}
+
+/* line 26, ../sass/base/_typography.scss */
+h2 {
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+/* line 32, ../sass/base/_typography.scss */
+h3 {
+  color: #391400;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.33;
+}
+
+/* line 40, ../sass/base/_typography.scss */
+h4 {
+  color: #ef6d58;
+  letter-spacing: 3px;
+}
+
+/* Body & Html */
+/* line 2, ../sass/base/_defaults.scss */
+html,
+body {
+  background-color: #fdf0e9;
+  margin: 0;
+  color: #391400;
+  font-family: "Epilogue-Regular", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 2;
+}
+
+/* line 13, ../sass/base/_defaults.scss */
+.container {
+  margin: 0 23px;
+}
+@media (min-width: 769px) {
+  /* line 13, ../sass/base/_defaults.scss */
+  .container {
+    width: 675px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1025px) {
+  /* line 13, ../sass/base/_defaults.scss */
+  .container {
+    width: 833px;
+  }
+}
+@media (min-width: 1280px) {
+  /* line 13, ../sass/base/_defaults.scss */
+  .container {
+    width: 1170px;
+  }
+}
+
+/* line 28, ../sass/base/_defaults.scss */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* line 32, ../sass/base/_defaults.scss */
+header {
+  background-color: #28293e;
+}
+
+/* line 36, ../sass/base/_defaults.scss */
+a {
+  text-decoration: none;
+  color: rgba(57, 20, 0, 0.5);
+  transition: all 0.5s;
+}
+
+/* line 41, ../sass/base/_defaults.scss */
+p {
+  margin: 0;
+}
+
+/* line 45, ../sass/base/_defaults.scss */
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+/* Button */
+/* line 2, ../sass/base/_buttons.scss */
+button {
+  background-color: transparent;
+  border: 0;
+  color: #391400;
+  font-size: 14px;
+  font-family: "Epilogue-Black", sans-serif;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+
+/* Header */
+/* line 2, ../sass/layout/_header.scss */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 6, ../sass/layout/_header.scss */
+.header-main img {
+  margin-top: 16px;
+  object-fit: contain;
+}
+/* line 11, ../sass/layout/_header.scss */
+.header-main button {
+  display: none;
+}
+@media (min-width: 769px) {
+  /* line 11, ../sass/layout/_header.scss */
+  .header-main button {
+    display: inline-block;
+    color: #fff;
+    margin-top: 16px;
+    padding: 17.5px 34.5px 14px;
+    transition: all 0.5s;
+  }
+  /* line 19, ../sass/layout/_header.scss */
+  .header-main button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+/* line 25, ../sass/layout/_header.scss */
+.header-main nav {
+  display: none;
+}
+@media (min-width: 769px) {
+  /* line 25, ../sass/layout/_header.scss */
+  .header-main nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    flex-basis: 66%;
+    gap: 5%;
+  }
+  /* line 33, ../sass/layout/_header.scss */
+  .header-main nav a {
+    color: #fff;
+  }
+  /* line 35, ../sass/layout/_header.scss */
+  .header-main nav a:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+@media (min-width: 1025px) {
+  /* line 25, ../sass/layout/_header.scss */
+  .header-main nav {
+    gap: 12%;
+  }
+}
+/* line 46, ../sass/layout/_header.scss */
+.header-main .button-wrapper img {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  padding: 17px 16px;
+  transition: all 0.5s;
+}
+/* line 51, ../sass/layout/_header.scss */
+.header-main .button-wrapper img:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+@media (min-width: 769px) {
+  /* line 46, ../sass/layout/_header.scss */
+  .header-main .button-wrapper img {
+    display: none;
+  }
+}
+
+/* Overlay */
+/* line 63, ../sass/layout/_header.scss */
+.overlay-wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+/* line 74, ../sass/layout/_header.scss */
+.overlay-wrapper .overlay {
+  height: 100%;
+  width: 90%;
+  position: fixed;
+  top: 0;
+  right: -90%;
+  background-color: #ffe4df;
+  overflow: hidden;
+  transition: 0.5s;
+}
+/* line 84, ../sass/layout/_header.scss */
+.overlay-wrapper .overlay .close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 25px;
+  right: 25px;
+}
+/* line 90, ../sass/layout/_header.scss */
+.overlay-wrapper .overlay .close-btn img:hover {
+  opacity: 0.75;
+}
+/* line 95, ../sass/layout/_header.scss */
+.overlay-wrapper .overlay nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 80px;
+}
+/* line 102, ../sass/layout/_header.scss */
+.overlay-wrapper .overlay nav a {
+  color: #391400;
+  font-size: 30px;
+  line-height: 2;
+}
+/* line 106, ../sass/layout/_header.scss */
+.overlay-wrapper .overlay nav a:hover {
+  color: rgba(57, 20, 0, 0.5);
+}
+
+/* line 114, ../sass/layout/_header.scss */
+.overlay-wrapper.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Banner */
+/* line 2, ../sass/layout/_banner.scss */
+.banner-wrapper {
+  background-color: #28293e;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 80px 23px 87px;
+  text-align: center;
+}
+/* line 8, ../sass/layout/_banner.scss */
+.banner-wrapper p {
+  margin-top: 12px;
+}
+/* line 10, ../sass/layout/_banner.scss */
+.banner-wrapper p span {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  /* line 16, ../sass/layout/_banner.scss */
+  .banner-wrapper {
+    padding: 104px 72px 68px;
+  }
+}
+@media (min-width: 769px) and (min-width: 1025px) {
+  /* line 16, ../sass/layout/_banner.scss */
+  .banner-wrapper {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+}
+@media (min-width: 769px) and (min-width: 1280px) {
+  /* line 16, ../sass/layout/_banner.scss */
+  .banner-wrapper {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+}
+@media (min-width: 769px) {
+  /* line 24, ../sass/layout/_banner.scss */
+  .banner-wrapper p {
+    margin-top: 24px;
+  }
+  /* line 26, ../sass/layout/_banner.scss */
+  .banner-wrapper p span {
+    display: inline;
+  }
+}

@@ -1,0 +1,117 @@
+/* Header */
+.header-main {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    margin-top: 16px;
+    object-fit: contain;
+  }
+
+  button {
+    display: none;
+    @media (min-width: $screen-md) {
+      display: inline-block;
+      color: $white;
+      margin-top: 16px;
+      padding: 17.5px 34.5px 14px;
+      transition: all $transition-delay;
+      &:hover {
+        background-color: $hover-white-bg;
+      }
+    }
+  }
+
+  nav {
+    display: none;
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: center;
+      margin-top: 28px;
+      flex-basis: 66%;
+      gap: 5%;
+      a {
+        color: $white;
+        &:hover {
+          color: $hover-white-text;
+        }
+      }
+    }
+    @media (min-width: $screen-lg) {
+      gap: 12%;
+    }
+  }
+
+  .button-wrapper {
+    img {
+      border: 1px solid $transparent-white;
+      border-radius: $b-radius;
+      padding: 17px 16px;
+      transition: all $transition-delay;
+      &:hover {
+        background-color: $hover-white-bg;
+        cursor: pointer;
+      }
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Overlay */
+.overlay-wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  background-color: $transparent-black;
+  transition: $transition-delay;
+
+  .overlay {
+    height: 100%;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    right: -90%;
+    background-color: $light-peach;
+    overflow: hidden;
+    transition: $transition-delay;
+
+    .close-btn {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 25px;
+      right: 25px;
+      img:hover {
+        opacity: 0.75;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      margin-top: 80px;
+
+      a {
+        color: $dark-brown;
+        font-size: 30px;
+        line-height: 2;
+        &:hover {
+          color: $transparent-dark-brown;
+        }
+      }
+    }
+  }
+}
+
+.overlay-wrapper.show {
+  visibility: visible;
+  opacity: 1;
+}

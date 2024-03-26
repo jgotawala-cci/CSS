@@ -1,0 +1,48 @@
+/* Body & Html */
+html,
+body {
+  background-color: $light-beige;
+  margin: 0;
+  color: $dark-brown;
+  font-family: $regular;
+  font-size: $font-size-base;
+  letter-spacing: 0;
+  line-height: 2;
+}
+
+.container {
+  margin: 0 $spacing-sm;
+  @media (min-width: $screen-md) {
+    width: $container-width-md;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  @media (min-width: $screen-lg) {
+    width: $container-width-lg;
+  }
+  @media (min-width: $screen-xl) {
+    width: $container-width-xl;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+header {
+  background-color: $navy-blue;
+}
+
+a {
+  text-decoration: none;
+  color: $transparent-dark-brown;
+  transition: all $transition-delay;
+}
+p {
+  margin: 0;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}

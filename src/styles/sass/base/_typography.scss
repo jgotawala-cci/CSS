@@ -1,0 +1,43 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: $white;
+  font-family: "Epilogue-ExtraBold";
+  font-weight: $font-weight-extra-bold;
+}
+
+h1 {
+  font-size: $h1-t-font-size;
+  letter-spacing: -2px;
+  line-height: 1.42;
+  @media (min-width: $screen-md) {
+    font-size: 72px;
+    line-height: 1.11;
+  }
+}
+
+h2 {
+  font-size: $h2-t-font-size;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+h3 {
+  color: $dark-brown;
+  font-size: 24px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0;
+  line-height: 1.33;
+}
+
+h4 {
+  color: $red-orange;
+  letter-spacing: 3px;
+}

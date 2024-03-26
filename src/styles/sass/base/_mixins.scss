@@ -1,0 +1,19 @@
+/* Mixins */
+
+@mixin vetical-margin($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+@mixin horizontal-margin($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin vetical-padding($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+@mixin horizontal-padding($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}

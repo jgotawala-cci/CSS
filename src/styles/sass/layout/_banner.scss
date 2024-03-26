@@ -1,0 +1,31 @@
+/* Banner */
+.banner-wrapper {
+  background-color: $navy-blue;
+  color: $hover-white-text;
+  padding: 80px $spacing-sm 87px;
+  text-align: center;
+
+  p {
+    margin-top: 12px;
+    span {
+      display: none;
+    }
+  }
+}
+@media (min-width: $screen-md) {
+  .banner-wrapper {
+    padding: 104px $spacing-md 68px;
+    @media (min-width: $screen-lg) {
+      @include horizontal-padding($spacing-lg, $spacing-lg);
+    }
+    @media (min-width: $screen-xl) {
+      @include horizontal-padding($spacing-xl, $spacing-xl);
+    }
+    p {
+      margin-top: 24px;
+      span {
+        display: inline;
+      }
+    }
+  }
+}
