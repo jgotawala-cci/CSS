@@ -5,6 +5,7 @@
 /*$bold*/
 /*$extra-bold*/
 /*$black*/
+/* Utilities */
 /* Fonts */
 @font-face {
   font-family: "Epilogue-Black";
@@ -163,17 +164,17 @@ button {
   display: flex;
   justify-content: space-between;
 }
-/* line 6, ../sass/layout/_header.scss */
+/* line 5, ../sass/layout/_header.scss */
 .header-main img {
   margin-top: 16px;
   object-fit: contain;
 }
-/* line 11, ../sass/layout/_header.scss */
+/* line 10, ../sass/layout/_header.scss */
 .header-main button {
   display: none;
 }
 @media (min-width: 769px) {
-  /* line 11, ../sass/layout/_header.scss */
+  /* line 10, ../sass/layout/_header.scss */
   .header-main button {
     display: inline-block;
     color: #fff;
@@ -181,17 +182,17 @@ button {
     padding: 17.5px 34.5px 14px;
     transition: all 0.5s;
   }
-  /* line 19, ../sass/layout/_header.scss */
+  /* line 18, ../sass/layout/_header.scss */
   .header-main button:hover {
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
-/* line 25, ../sass/layout/_header.scss */
+/* line 24, ../sass/layout/_header.scss */
 .header-main nav {
   display: none;
 }
 @media (min-width: 769px) {
-  /* line 25, ../sass/layout/_header.scss */
+  /* line 24, ../sass/layout/_header.scss */
   .header-main nav {
     display: flex;
     justify-content: center;
@@ -199,35 +200,35 @@ button {
     flex-basis: 66%;
     gap: 5%;
   }
-  /* line 33, ../sass/layout/_header.scss */
+  /* line 31, ../sass/layout/_header.scss */
   .header-main nav a {
     color: #fff;
   }
-  /* line 35, ../sass/layout/_header.scss */
+  /* line 33, ../sass/layout/_header.scss */
   .header-main nav a:hover {
     color: rgba(255, 255, 255, 0.5);
   }
 }
 @media (min-width: 1025px) {
-  /* line 25, ../sass/layout/_header.scss */
+  /* line 24, ../sass/layout/_header.scss */
   .header-main nav {
     gap: 12%;
   }
 }
-/* line 46, ../sass/layout/_header.scss */
+/* line 44, ../sass/layout/_header.scss */
 .header-main .button-wrapper img {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 6px;
   padding: 17px 16px;
   transition: all 0.5s;
 }
-/* line 51, ../sass/layout/_header.scss */
+/* line 49, ../sass/layout/_header.scss */
 .header-main .button-wrapper img:hover {
   background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 @media (min-width: 769px) {
-  /* line 46, ../sass/layout/_header.scss */
+  /* line 44, ../sass/layout/_header.scss */
   .header-main .button-wrapper img {
     display: none;
   }
@@ -358,11 +359,11 @@ main div nav {
     margin-top: 76px;
     gap: 46px;
   }
-  /* line 12, ../sass/layout/_tabs.scss */
+  /* line 11, ../sass/layout/_tabs.scss */
   main div nav a:hover {
-    color: var(--dark-brown);
+    color: #391400;
   }
-  /* line 15, ../sass/layout/_tabs.scss */
+  /* line 14, ../sass/layout/_tabs.scss */
   main div nav a sup {
     font-size: 14px;
     line-height: 1.71;
@@ -372,11 +373,11 @@ main div nav {
     /* Adjust the vertical position as needed */
   }
 }
-/* line 24, ../sass/layout/_tabs.scss */
+/* line 23, ../sass/layout/_tabs.scss */
 main div .dropdown {
   position: relative;
 }
-/* line 26, ../sass/layout/_tabs.scss */
+/* line 25, ../sass/layout/_tabs.scss */
 main div .dropdown .dropdown-view {
   display: flex;
   justify-content: space-between;
@@ -389,23 +390,23 @@ main div .dropdown .dropdown-view {
   padding: 4.5px 16px;
   position: relative;
 }
-/* line 38, ../sass/layout/_tabs.scss */
+/* line 36, ../sass/layout/_tabs.scss */
 main div .dropdown .dropdown-view label {
   padding-top: 5px;
 }
-/* line 42, ../sass/layout/_tabs.scss */
+/* line 40, ../sass/layout/_tabs.scss */
 main div .dropdown .dropdown-view:hover {
   cursor: pointer;
   border: 1px solid #f7cc47;
   color: #391400;
 }
 @media (min-width: 769px) {
-  /* line 24, ../sass/layout/_tabs.scss */
+  /* line 23, ../sass/layout/_tabs.scss */
   main div .dropdown {
     display: none;
   }
 }
-/* line 52, ../sass/layout/_tabs.scss */
+/* line 50, ../sass/layout/_tabs.scss */
 main div .dropdown-content {
   width: 100%;
   position: absolute;
@@ -420,34 +421,34 @@ main div .dropdown-content {
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
-/* line 66, ../sass/layout/_tabs.scss */
+/* line 64, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 68, ../sass/layout/_tabs.scss */
+/* line 66, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul li {
   height: 40px;
   line-height: 2.7;
   border-bottom: 1px solid #f38472;
   padding-left: 16px;
 }
-/* line 73, ../sass/layout/_tabs.scss */
+/* line 71, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul li a {
   display: block;
 }
-/* line 75, ../sass/layout/_tabs.scss */
+/* line 73, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul li a:hover {
   color: #391400;
 }
-/* line 82, ../sass/layout/_tabs.scss */
+/* line 80, ../sass/layout/_tabs.scss */
 main div .dropdown.active .dropdown-content {
   max-height: 250px;
   /* Show the dropdown by setting max-height to a value */
 }
 
-/* line 87, ../sass/layout/_tabs.scss */
+/* line 85, ../sass/layout/_tabs.scss */
 .selected {
   color: #391400;
 }
@@ -556,10 +557,10 @@ main div .dropdown.active .dropdown-content {
 /* line 2, ../sass/layout/_contact.scss */
 .contact-container {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column-reverse;
   border-radius: 6px;
   background-color: #ef6d58;
-  justify-content: space-evenly;
   margin-top: 112px;
   padding: 0 28px;
 }
@@ -693,23 +694,23 @@ main div .dropdown.active .dropdown-content {
     display: flex;
     justify-content: space-between;
   }
-  /* line 43, ../sass/layout/_footer.scss */
+  /* line 42, ../sass/layout/_footer.scss */
   .footer-top-wrapper h3 {
     margin-top: 9px;
   }
-  /* line 46, ../sass/layout/_footer.scss */
+  /* line 45, ../sass/layout/_footer.scss */
   .footer-top-wrapper .option {
     margin-top: 12px;
     text-align: left;
   }
-  /* line 50, ../sass/layout/_footer.scss */
+  /* line 49, ../sass/layout/_footer.scss */
   .footer-top-wrapper .social-media-icons {
     margin-top: 0;
   }
 }
 
 /* Footer bottom */
-/* line 57, ../sass/layout/_footer.scss */
+/* line 56, ../sass/layout/_footer.scss */
 .footer-bottom-wrapper {
   display: flex;
   flex-direction: column-reverse;
@@ -718,42 +719,42 @@ main div .dropdown.active .dropdown-content {
   margin-top: 64px;
   text-align: center;
 }
-/* line 65, ../sass/layout/_footer.scss */
+/* line 64, ../sass/layout/_footer.scss */
 .footer-bottom-wrapper nav a {
   margin-right: 68px;
   color: #391400;
 }
-/* line 68, ../sass/layout/_footer.scss */
+/* line 67, ../sass/layout/_footer.scss */
 .footer-bottom-wrapper nav a:hover {
   color: rgba(57, 20, 0, 0.5);
 }
-/* line 72, ../sass/layout/_footer.scss */
+/* line 71, ../sass/layout/_footer.scss */
 .footer-bottom-wrapper nav a.no-margin {
   margin-right: 0px;
 }
-/* line 76, ../sass/layout/_footer.scss */
+/* line 75, ../sass/layout/_footer.scss */
 .footer-bottom-wrapper span {
   color: rgba(57, 20, 0, 0.5);
   flex-basis: 50%;
   margin-top: 32px;
 }
 @media (min-width: 769px) {
-  /* line 57, ../sass/layout/_footer.scss */
+  /* line 56, ../sass/layout/_footer.scss */
   .footer-bottom-wrapper {
     flex-direction: row;
   }
-  /* line 83, ../sass/layout/_footer.scss */
+  /* line 82, ../sass/layout/_footer.scss */
   .footer-bottom-wrapper nav {
     flex-basis: 50%;
     justify-content: flex-end;
     text-align: end;
   }
-  /* line 88, ../sass/layout/_footer.scss */
+  /* line 87, ../sass/layout/_footer.scss */
   .footer-bottom-wrapper span {
     margin-top: 0;
     text-align: start;
   }
-  /* line 91, ../sass/layout/_footer.scss */
+  /* line 90, ../sass/layout/_footer.scss */
   .footer-bottom-wrapper span span {
     display: none;
   }

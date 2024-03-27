@@ -34,7 +34,7 @@
       align-items: center;
       flex-direction: column;
       height: 100%;
-      margin-top: 80px;
+      margin-top: map-get($spacing, spacing-80);
 
       a {
         color: $dark-brown;

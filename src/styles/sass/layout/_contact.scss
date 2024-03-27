@@ -1,15 +1,15 @@
 /* Contact */
 .contact-container {
   display: flex;
-  flex-direction: column-reverse;
-  border-radius: 6px;
-  background-color: $red-orange;
   justify-content: space-evenly;
+  flex-direction: column-reverse;
+  border-radius: $b-radius;
+  background-color: $red-orange;
   margin-top: 112px;
-  padding: 0 28px;
+  padding: 0 map-get($spacing, spacing-28);
   img {
     height: auto;
-    margin-top: 32px;
+    margin-top: map-get($spacing, spacing-32);
     object-fit: contain;
   }
   h2 {
@@ -23,7 +23,7 @@
     background-color: $white;
     box-shadow: 0 3px 9px 0 rgba(57, 20, 0, 0.08);
     margin-top: 21px;
-    margin-bottom: 48px;
+    margin-bottom: map-get($spacing, spacing-48);
     padding: 17.5px 23.5px 14px;
     &:hover {
       background-color: $transparent-white;

@@ -6,7 +6,7 @@
   place-items: center;
   grid-template-columns: 1fr;
   line-height: 0;
-  margin-top: 48px;
+  margin-top: map-get($spacing, spacing-48);
 
   figure {
     width: 100%;
@@ -21,7 +21,7 @@
       width: 100%;
       height: 416px;
       object-fit: cover;
-      border-radius: 6px;
+      border-radius: $b-radius;
     }
     figcaption {
       position: absolute;
@@ -31,7 +31,7 @@
       span {
         display: inline-block;
         background-color: $white;
-        padding: 5px 15px 1px 16px;
+        padding: 5px 15px 1px map-get($spacing, spacing-16);
         border-radius: 19px;
       }
       h2 {
@@ -43,7 +43,7 @@
   @media (min-width: $screen-md) {
     grid-template-columns: 1fr 1fr; /* Two columns of equal width */
     grid-template-rows: 1fr auto; /* One row with full width, and one row with two columns */
-    margin-top: 68px;
+    margin-top: map-get($spacing, spacing-68);
 
     figure:first-child {
       grid-column: 1 / -1; /* Span the full width of the grid */

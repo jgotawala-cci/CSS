@@ -4,13 +4,12 @@ main {
     nav {
       display: none;
       @media (min-width: $screen-md) {
-        display: flex;
-        justify-content: center;
-        margin-top: 76px;
+        @include flex-justify-center;
+        margin-top: map-get($spacing, spacing-76);
         gap: 46px;
         a {
           &:hover {
-            color: var(--dark-brown);
+            color: $dark-brown;
           }
           sup {
             font-size: 14px;
@@ -24,15 +23,14 @@ main {
     .dropdown {
       position: relative;
       .dropdown-view {
-        display: flex;
-        justify-content: space-between;
+        @include flex-space-between;
         align-items: center;
         color: $transparent-dark-brown;
         background-color: $white;
         border: 1px solid $pale-apricot;
         border-radius: $b-radius;
-        margin-top: 28px;
-        padding: 4.5px 16px;
+        margin-top: map-get($spacing, spacing-28);
+        padding: 4.5px map-get($spacing, spacing-16);
         position: relative;
 
         label {
@@ -69,7 +67,7 @@ main {
           height: 40px;
           line-height: 2.7;
           border-bottom: 1px solid $orange;
-          padding-left: 16px;
+          padding-left: map-get($spacing, spacing-16);
           a {
             display: block;
             &:hover {

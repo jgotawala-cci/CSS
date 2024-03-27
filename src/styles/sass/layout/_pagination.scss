@@ -2,13 +2,13 @@
 .page-count-wrapper {
   display: block;
   text-align: center;
-  margin-top: 48px;
+  margin-top: map-get($spacing, spacing-48);
 
   button {
     display: inline-block;
     background-color: $white;
     box-shadow: 0 3px 9px 0 rgba(57, 20, 0, 0.08);
-    margin-right: 8px;
+    margin-right: map-get($spacing, spacing-8);
     padding: 17.5px 18.5px 14px;
     min-width: 48px;
     &:hover {

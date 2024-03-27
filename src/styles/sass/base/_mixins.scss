@@ -29,3 +29,26 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin generate-spacing-variables($min, $max, $step) {
+  @for $i from $min through $max {
+    // Calculate the value based on the step
+    $value: $i * $step;
+    // Define the variable dynamically
+    $variable: spacing-#{$i};
+    // Output the variable assignments within a CSS rule
+    // .#{$variable} {
+    //   margin: $value; // Adjust the property as needed
+    // }
+  }
+}

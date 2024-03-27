@@ -62,3 +62,11 @@ $font-weight-bold: 700;
 $font-weight-extra-bold: 800;
 /*$black*/
 $font-weight-black: 900;
+
+// Define minimum, maximum, and step values
+$min-spacing: 1;
+$max-spacing: 20;
+$step: 4;
+
+// Create an empty map to store the dynamic variables
+$spacing: ();
