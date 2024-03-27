@@ -64,9 +64,7 @@ main {
       transition: max-height $transition-delay ease;
 
       ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        @include remove-ul-style;
         li {
           height: 40px;
           line-height: 2.7;

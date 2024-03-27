@@ -285,8 +285,14 @@ button {
 .overlay-wrapper .overlay nav a:hover {
   color: rgba(57, 20, 0, 0.5);
 }
+@media (min-width: 769px) {
+  /* line 2, ../sass/layout/_aside.scss */
+  .overlay-wrapper {
+    display: none;
+  }
+}
 
-/* line 51, ../sass/layout/_aside.scss */
+/* line 54, ../sass/layout/_aside.scss */
 .overlay-wrapper.show {
   visibility: visible;
   opacity: 1;
@@ -420,28 +426,28 @@ main div .dropdown-content ul {
   margin: 0;
   padding: 0;
 }
-/* line 70, ../sass/layout/_tabs.scss */
+/* line 68, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul li {
   height: 40px;
   line-height: 2.7;
   border-bottom: 1px solid #f38472;
   padding-left: 16px;
 }
-/* line 75, ../sass/layout/_tabs.scss */
+/* line 73, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul li a {
   display: block;
 }
-/* line 77, ../sass/layout/_tabs.scss */
+/* line 75, ../sass/layout/_tabs.scss */
 main div .dropdown-content ul li a:hover {
   color: #391400;
 }
-/* line 84, ../sass/layout/_tabs.scss */
+/* line 82, ../sass/layout/_tabs.scss */
 main div .dropdown.active .dropdown-content {
   max-height: 250px;
   /* Show the dropdown by setting max-height to a value */
 }
 
-/* line 89, ../sass/layout/_tabs.scss */
+/* line 87, ../sass/layout/_tabs.scss */
 .selected {
   color: #391400;
 }
@@ -623,5 +629,132 @@ main div .dropdown.active .dropdown-content {
   .contact-container .content-wrapper .contact-button {
     margin: 0;
     margin-top: 34px;
+  }
+}
+
+/* Footer top */
+/* line 2, ../sass/layout/_footer.scss */
+.footer-top-wrapper {
+  text-align: center;
+  margin-top: 80px;
+}
+/* line 5, ../sass/layout/_footer.scss */
+.footer-top-wrapper .option {
+  margin-top: 51px;
+}
+/* line 7, ../sass/layout/_footer.scss */
+.footer-top-wrapper .option ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 10, ../sass/layout/_footer.scss */
+.footer-top-wrapper .option a {
+  display: block;
+  color: #391400;
+}
+/* line 13, ../sass/layout/_footer.scss */
+.footer-top-wrapper .option a:hover {
+  color: rgba(57, 20, 0, 0.5);
+}
+/* line 18, ../sass/layout/_footer.scss */
+.footer-top-wrapper .social-media-icons {
+  margin-top: 52px;
+}
+/* line 20, ../sass/layout/_footer.scss */
+.footer-top-wrapper .social-media-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 22, ../sass/layout/_footer.scss */
+.footer-top-wrapper .social-media-icons ul li {
+  display: inline;
+}
+/* line 26, ../sass/layout/_footer.scss */
+.footer-top-wrapper .social-media-icons img {
+  background-color: #ef6d58;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 24px;
+  margin-right: 8px;
+}
+/* line 33, ../sass/layout/_footer.scss */
+.footer-top-wrapper .social-media-icons img.no-margin {
+  margin-right: 0;
+}
+/* line 36, ../sass/layout/_footer.scss */
+.footer-top-wrapper .social-media-icons a:hover {
+  opacity: 0.7;
+}
+@media (min-width: 769px) {
+  /* line 2, ../sass/layout/_footer.scss */
+  .footer-top-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 43, ../sass/layout/_footer.scss */
+  .footer-top-wrapper h3 {
+    margin-top: 9px;
+  }
+  /* line 46, ../sass/layout/_footer.scss */
+  .footer-top-wrapper .option {
+    margin-top: 12px;
+    text-align: left;
+  }
+  /* line 50, ../sass/layout/_footer.scss */
+  .footer-top-wrapper .social-media-icons {
+    margin-top: 0;
+  }
+}
+
+/* Footer bottom */
+/* line 57, ../sass/layout/_footer.scss */
+.footer-bottom-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  border-top: 1px solid #f3d1bf;
+  padding: 43px 0 52px;
+  margin-top: 64px;
+  text-align: center;
+}
+/* line 65, ../sass/layout/_footer.scss */
+.footer-bottom-wrapper nav a {
+  margin-right: 68px;
+  color: #391400;
+}
+/* line 68, ../sass/layout/_footer.scss */
+.footer-bottom-wrapper nav a:hover {
+  color: rgba(57, 20, 0, 0.5);
+}
+/* line 72, ../sass/layout/_footer.scss */
+.footer-bottom-wrapper nav a.no-margin {
+  margin-right: 0px;
+}
+/* line 76, ../sass/layout/_footer.scss */
+.footer-bottom-wrapper span {
+  color: rgba(57, 20, 0, 0.5);
+  flex-basis: 50%;
+  margin-top: 32px;
+}
+@media (min-width: 769px) {
+  /* line 57, ../sass/layout/_footer.scss */
+  .footer-bottom-wrapper {
+    flex-direction: row;
+  }
+  /* line 83, ../sass/layout/_footer.scss */
+  .footer-bottom-wrapper nav {
+    flex-basis: 50%;
+    justify-content: flex-end;
+    text-align: end;
+  }
+  /* line 88, ../sass/layout/_footer.scss */
+  .footer-bottom-wrapper span {
+    margin-top: 0;
+    text-align: start;
+  }
+  /* line 91, ../sass/layout/_footer.scss */
+  .footer-bottom-wrapper span span {
+    display: none;
   }
 }

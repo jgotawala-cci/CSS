@@ -46,6 +46,9 @@
       }
     }
   }
+  @media (min-width: $screen-md) {
+    display: none;
+  }
 }
 
 .overlay-wrapper.show {
