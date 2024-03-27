@@ -1,0 +1,64 @@
+/* Contact */
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
+  border-radius: $b-radius;
+  background-color: $red-orange;
+  margin-top: 112px;
+  padding: 0 map-get($spacing, spacing-28);
+  img {
+    height: auto;
+    margin-top: map-get($spacing, spacing-32);
+    object-fit: contain;
+  }
+  h2 {
+    margin-top: 37px;
+  }
+  p {
+    color: $transparent-white;
+    margin-top: 15px;
+  }
+  .contact-button {
+    background-color: $white;
+    box-shadow: 0 3px 9px 0 rgba(57, 20, 0, 0.08);
+    margin-top: 21px;
+    margin-bottom: map-get($spacing, spacing-48);
+    padding: 17.5px 23.5px 14px;
+    &:hover {
+      background-color: $transparent-white;
+    }
+  }
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+    align-items: center;
+    padding: 41.25px 0 71px;
+    img {
+      width: 40%;
+      height: auto;
+      flex-basis: 40%;
+      object-fit: contain;
+      margin: 0;
+    }
+    .content-wrapper {
+      flex-basis: 40%;
+      h2,
+      .grid-container figure:first-child h2 {
+        font-size: 56px;
+        font-weight: 800;
+        letter-spacing: -1px;
+        line-height: 1.14;
+      }
+      h2 {
+        margin: 0;
+      }
+      p {
+        margin-top: 28px;
+      }
+      .contact-button {
+        margin: 0;
+        margin-top: 34px;
+      }
+    }
+  }
+}

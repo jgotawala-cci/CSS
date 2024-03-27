@@ -1,0 +1,31 @@
+/* Banner */
+.banner-wrapper {
+  background-color: $navy-blue;
+  color: $hover-white-text;
+  padding: map-get($spacing, spacing-80) $spacing-sm 87px;
+  text-align: center;
+
+  p {
+    margin-top: map-get($spacing, spacing-12);
+    span {
+      display: none;
+    }
+  }
+}
+@media (min-width: $screen-md) {
+  .banner-wrapper {
+    padding: 104px $spacing-md map-get($spacing, spacing-68);
+    @media (min-width: $screen-lg) {
+      @include horizontal-padding($spacing-lg, $spacing-lg);
+    }
+    @media (min-width: $screen-xl) {
+      @include horizontal-padding($spacing-xl, $spacing-xl);
+    }
+    p {
+      margin-top: map-get($spacing, spacing-24);
+      span {
+        display: inline;
+      }
+    }
+  }
+}

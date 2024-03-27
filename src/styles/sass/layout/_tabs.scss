@@ -1,0 +1,87 @@
+/* Tabs */
+main {
+  div {
+    nav {
+      display: none;
+      @media (min-width: $screen-md) {
+        @include flex-justify-center;
+        margin-top: map-get($spacing, spacing-76);
+        gap: 46px;
+        a {
+          &:hover {
+            color: $dark-brown;
+          }
+          sup {
+            font-size: 14px;
+            line-height: 1.71;
+            position: relative; /* Enable positioning */
+            top: -5px; /* Adjust the vertical position as needed */
+          }
+        }
+      }
+    }
+    .dropdown {
+      position: relative;
+      .dropdown-view {
+        @include flex-space-between;
+        align-items: center;
+        color: $transparent-dark-brown;
+        background-color: $white;
+        border: 1px solid $pale-apricot;
+        border-radius: $b-radius;
+        margin-top: map-get($spacing, spacing-28);
+        padding: 4.5px map-get($spacing, spacing-16);
+        position: relative;
+
+        label {
+          padding-top: 5px;
+        }
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $yellow;
+          color: $dark-brown;
+        }
+      }
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+    .dropdown-content {
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      background-color: $white;
+      border-bottom-left-radius: $b-radius;
+      border-bottom-right-radius: $b-radius;
+
+      top: 100%;
+      left: 0;
+      max-height: 0; /* Initially hide the dropdown */
+      overflow: hidden;
+      transition: max-height $transition-delay ease;
+
+      ul {
+        @include remove-ul-style;
+        li {
+          height: 40px;
+          line-height: 2.7;
+          border-bottom: 1px solid $orange;
+          padding-left: map-get($spacing, spacing-16);
+          a {
+            display: block;
+            &:hover {
+              color: $dark-brown;
+            }
+          }
+        }
+      }
+    }
+    .dropdown.active .dropdown-content {
+      max-height: 250px; /* Show the dropdown by setting max-height to a value */
+    }
+  }
+}
+.selected {
+  color: $dark-brown;
+}

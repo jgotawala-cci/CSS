@@ -22,14 +22,26 @@
     <div class="social-media-icons">
       <ul>
         <li>
-          <a href="#"><img src="../../styles/images/facebook.svg" /> </a>
-        </li>
-        <li>
-          <a href="#"><img src="../../styles/images/twitter.svg" /></a>
+          <a href="#"
+            ><img
+              src="../../styles/images/facebook.svg"
+              width="48"
+              height="48"
+            />
+          </a>
         </li>
         <li>
           <a href="#"
-            ><img class="no-margin" src="../../styles/images/instagram.svg"
+            ><img src="../../styles/images/twitter.svg" width="48" height="48"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              class="no-margin"
+              src="../../styles/images/instagram.svg"
+              width="48"
+              height="48"
           /></a>
         </li>
       </ul>

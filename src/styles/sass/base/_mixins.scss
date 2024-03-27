@@ -1,0 +1,54 @@
+/* Mixins */
+
+@mixin vetical-margin($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+@mixin horizontal-margin($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin vetical-padding($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+@mixin horizontal-padding($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin page-active {
+  background-color: $red-orange;
+  color: $white;
+  box-shadow: 0;
+}
+
+@mixin remove-ul-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin generate-spacing-variables($min, $max, $step) {
+  @for $i from $min through $max {
+    // Calculate the value based on the step
+    $value: $i * $step;
+    // Define the variable dynamically
+    $variable: spacing-#{$i};
+    // Output the variable assignments within a CSS rule
+    // .#{$variable} {
+    //   margin: $value; // Adjust the property as needed
+    // }
+  }
+}

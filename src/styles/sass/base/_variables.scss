@@ -1,0 +1,72 @@
+/* Variables */
+
+/* Font */
+$font-black: "Epilogue-Black", sans-serif;
+$bold: "Epilogue-Bold", sans-serif;
+$extra-bold: "Epilogue-ExtraBold", sans-serif;
+$regular: "Epilogue-Regular", sans-serif;
+
+/* Colors */
+$white: #fff;
+$transparent-black: rgba(0, 0, 0, 0.5);
+$transparent-white: rgba(255, 255, 255, 0.5);
+$hover-white-bg: rgba(255, 255, 255, 0.2);
+$hover-white-text: rgba(255, 255, 255, 0.5);
+$dark-brown: #391400;
+$transparent-dark-brown: rgba(57, 20, 0, 0.5);
+$gray: #9b9b9b;
+$red-orange: #ef6d58;
+$light-peach: #ffe4df;
+$brown: #5c2000;
+$blue: #1d46f6;
+$yellow: #f7cc47;
+$light-orange: #ffd5ce;
+$light-beige: #fdf0e9;
+$pale-apricot: #f3d1bf;
+$orange: #f38472;
+$pink: #f094e3;
+$navy-blue: #28293e;
+
+/* HELPERS */
+$spacing-sm: 23px;
+$spacing-md: 72px;
+$spacing-lg: 96px;
+$spacing-xl: 135px;
+
+$container-width-md: 675px;
+$container-width-lg: 833px;
+$container-width-xl: 1170px;
+
+$b-radius: 6px;
+
+$screen-xs: 376px; // Extra extra small screen / phone
+$screen-sm: 576px; // Extra small screen / phone
+$screen-md: 769px; // Small screen / tablet
+$screen-lg: 1025px; // Medium screen / desktop
+$screen-xl: 1280px; // Large screen / wide desktop
+
+$transition-delay: 0.5s;
+
+//base font size
+$font-size-base: 16px;
+
+// This variable affects the headings font size classes.
+$h1-t-font-size: 56px;
+$h2-t-font-size: 40px;
+$h3-t-font-size: 24px;
+$h4-t-font-size: $font-size-base;
+
+/*$bold*/
+$font-weight-bold: 700;
+/*$extra-bold*/
+$font-weight-extra-bold: 800;
+/*$black*/
+$font-weight-black: 900;
+
+// Define minimum, maximum, and step values
+$min-spacing: 1;
+$max-spacing: 20;
+$step: 4;
+
+// Create an empty map to store the dynamic variables
+$spacing: ();

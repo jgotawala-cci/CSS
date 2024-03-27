@@ -1,0 +1,58 @@
+/* Header */
+.header-main {
+  @include flex-space-between;
+
+  img {
+    margin-top: map-get($spacing, spacing-16);
+    object-fit: contain;
+  }
+
+  button {
+    display: none;
+    @media (min-width: $screen-md) {
+      display: inline-block;
+      color: $white;
+      margin-top: map-get($spacing, spacing-16);
+      padding: 17.5px 34.5px 14px;
+      transition: all $transition-delay;
+      &:hover {
+        background-color: $hover-white-bg;
+      }
+    }
+  }
+
+  nav {
+    display: none;
+    @media (min-width: $screen-md) {
+      @include flex-justify-center;
+      margin-top: map-get($spacing, spacing-28);
+      flex-basis: 66%;
+      gap: 5%;
+      a {
+        color: $white;
+        &:hover {
+          color: $hover-white-text;
+        }
+      }
+    }
+    @media (min-width: $screen-lg) {
+      gap: 12%;
+    }
+  }
+
+  .button-wrapper {
+    img {
+      border: 1px solid $transparent-white;
+      border-radius: $b-radius;
+      padding: 17px map-get($spacing, spacing-16);
+      transition: all $transition-delay;
+      &:hover {
+        background-color: $hover-white-bg;
+        cursor: pointer;
+      }
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+/* Overlay */
+.overlay-wrapper {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  background-color: $transparent-black;
+  transition: $transition-delay;
+
+  .overlay {
+    height: 100%;
+    width: 90%;
+    position: fixed;
+    top: 0;
+    right: -90%;
+    background-color: $light-peach;
+    overflow: hidden;
+    transition: $transition-delay;
+
+    .close-btn {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      img:hover {
+        opacity: 0.75;
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      margin-top: map-get($spacing, spacing-80);
+
+      a {
+        color: $dark-brown;
+        font-size: 30px;
+        line-height: 2;
+        &:hover {
+          color: $transparent-dark-brown;
+        }
+      }
+    }
+  }
+  @media (min-width: $screen-md) {
+    display: none;
+  }
+}
+
+.overlay-wrapper.show {
+  visibility: visible;
+  opacity: 1;
+}
