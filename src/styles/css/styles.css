@@ -234,7 +234,7 @@ button {
 }
 
 /* Overlay */
-/* line 63, ../sass/layout/_header.scss */
+/* line 2, ../sass/layout/_aside.scss */
 .overlay-wrapper {
   height: 100%;
   width: 100%;
@@ -246,7 +246,7 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
 }
-/* line 74, ../sass/layout/_header.scss */
+/* line 13, ../sass/layout/_aside.scss */
 .overlay-wrapper .overlay {
   height: 100%;
   width: 90%;
@@ -257,19 +257,17 @@ button {
   overflow: hidden;
   transition: 0.5s;
 }
-/* line 84, ../sass/layout/_header.scss */
+/* line 23, ../sass/layout/_aside.scss */
 .overlay-wrapper .overlay .close-btn {
   position: absolute;
-  width: 30px;
-  height: 30px;
   top: 25px;
   right: 25px;
 }
-/* line 90, ../sass/layout/_header.scss */
+/* line 27, ../sass/layout/_aside.scss */
 .overlay-wrapper .overlay .close-btn img:hover {
   opacity: 0.75;
 }
-/* line 95, ../sass/layout/_header.scss */
+/* line 32, ../sass/layout/_aside.scss */
 .overlay-wrapper .overlay nav {
   display: flex;
   align-items: center;
@@ -277,18 +275,18 @@ button {
   height: 100%;
   margin-top: 80px;
 }
-/* line 102, ../sass/layout/_header.scss */
+/* line 39, ../sass/layout/_aside.scss */
 .overlay-wrapper .overlay nav a {
   color: #391400;
   font-size: 30px;
   line-height: 2;
 }
-/* line 106, ../sass/layout/_header.scss */
+/* line 43, ../sass/layout/_aside.scss */
 .overlay-wrapper .overlay nav a:hover {
   color: rgba(57, 20, 0, 0.5);
 }
 
-/* line 114, ../sass/layout/_header.scss */
+/* line 51, ../sass/layout/_aside.scss */
 .overlay-wrapper.show {
   visibility: visible;
   opacity: 1;
@@ -512,5 +510,118 @@ main div .dropdown.active .dropdown-content {
   /* line 52, ../sass/layout/_grid.scss */
   .grid-container figure:first-child img {
     height: 720px;
+  }
+}
+
+/* Pagination */
+/* line 2, ../sass/layout/_pagination.scss */
+.page-count-wrapper {
+  display: block;
+  text-align: center;
+  margin-top: 48px;
+}
+/* line 7, ../sass/layout/_pagination.scss */
+.page-count-wrapper button {
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0 3px 9px 0 rgba(57, 20, 0, 0.08);
+  margin-right: 8px;
+  padding: 17.5px 18.5px 14px;
+  min-width: 48px;
+}
+/* line 14, ../sass/layout/_pagination.scss */
+.page-count-wrapper button:hover {
+  background-color: #ef6d58;
+  color: #fff;
+  box-shadow: 0;
+}
+/* line 18, ../sass/layout/_pagination.scss */
+.page-count-wrapper button.no-margin {
+  margin-right: 0;
+}
+/* line 21, ../sass/layout/_pagination.scss */
+.page-count-wrapper .active {
+  background-color: #ef6d58;
+  color: #fff;
+  box-shadow: 0;
+}
+
+/* Contact */
+/* line 2, ../sass/layout/_contact.scss */
+.contact-container {
+  display: flex;
+  flex-direction: column-reverse;
+  border-radius: 6px;
+  background-color: #ef6d58;
+  justify-content: space-evenly;
+  margin-top: 112px;
+  padding: 0 28px;
+}
+/* line 10, ../sass/layout/_contact.scss */
+.contact-container img {
+  height: auto;
+  margin-top: 32px;
+  object-fit: contain;
+}
+/* line 15, ../sass/layout/_contact.scss */
+.contact-container h2 {
+  margin-top: 37px;
+}
+/* line 18, ../sass/layout/_contact.scss */
+.contact-container p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+}
+/* line 22, ../sass/layout/_contact.scss */
+.contact-container .contact-button {
+  background-color: #fff;
+  box-shadow: 0 3px 9px 0 rgba(57, 20, 0, 0.08);
+  margin-top: 21px;
+  margin-bottom: 48px;
+  padding: 17.5px 23.5px 14px;
+}
+/* line 28, ../sass/layout/_contact.scss */
+.contact-container .contact-button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media (min-width: 769px) {
+  /* line 2, ../sass/layout/_contact.scss */
+  .contact-container {
+    flex-direction: row;
+    align-items: center;
+    padding: 41.25px 0 71px;
+  }
+  /* line 36, ../sass/layout/_contact.scss */
+  .contact-container img {
+    width: 40%;
+    height: auto;
+    flex-basis: 40%;
+    object-fit: contain;
+    margin: 0;
+  }
+  /* line 43, ../sass/layout/_contact.scss */
+  .contact-container .content-wrapper {
+    flex-basis: 40%;
+  }
+  /* line 45, ../sass/layout/_contact.scss */
+  .contact-container .content-wrapper h2,
+  .contact-container .content-wrapper .grid-container figure:first-child h2 {
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.14;
+  }
+  /* line 52, ../sass/layout/_contact.scss */
+  .contact-container .content-wrapper h2 {
+    margin: 0;
+  }
+  /* line 55, ../sass/layout/_contact.scss */
+  .contact-container .content-wrapper p {
+    margin-top: 28px;
+  }
+  /* line 58, ../sass/layout/_contact.scss */
+  .contact-container .content-wrapper .contact-button {
+    margin: 0;
+    margin-top: 34px;
   }
 }

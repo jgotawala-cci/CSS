@@ -6,7 +6,7 @@
         class="close-btn"
         @click="props.onCloseOverlay"
       >
-        <img src="../../styles/images/x-mark.svg" />
+        <img src="../../styles/images/x-mark.svg" width="30" height="30" />
       </a>
       <nav>
         <a href="#" @click="props.onCloseOverlay">About</a>

@@ -17,3 +17,9 @@
   padding-left: $left;
   padding-right: $right;
 }
+
+@mixin page-active {
+  background-color: $red-orange;
+  color: $white;
+  box-shadow: 0;
+}
